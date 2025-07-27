@@ -7,7 +7,33 @@
     <title>AI Recipe Generator</title>
   </head>
   <body>
-    Welcome to the page!
+    <header>
+      <h1>AI Recipe Generator</h1>
+      <h3>Generate delicious dessert recipes with AI!</h3>
+    </header>
+
+    <main>
+      <form>
+        <input type="" placeholder="Enter a dessert name" required />
+        <button type="submit">Generate Recipe</button>
+        <button type="reset">Reset</button>
+      </form>
+      <div class="recipe-output">
+        <h2>Generated Recipe</h2>
+        <p id="recipe-text">Your recipe will appear here...</p>
+      </div>
+      <div class="image-output">
+        <h2>Recipe Image</h2>
+        <img id="recipe-image" src="" alt="Generated Recipe Image" />
+      </div>
+      <br />
+      <div class="source-output">
+        <h2>Source</h2>
+        <p id="source-text">Source information will appear here...</p>
+      </div>
+      <br />
+      <br />
+    </main>
 
     <footer>
       This project was coded by
