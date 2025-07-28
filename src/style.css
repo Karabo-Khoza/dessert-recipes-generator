@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 650px;
   margin: 120px auto;
 }
 
@@ -30,6 +30,8 @@ form {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
+  border-left: #ff7f50 5px solid;
+  border-right: #ff7f50 5px solid;
 }
 
 .input {
@@ -38,6 +40,12 @@ form {
   border: 1px solid #ffa07a;
   border-radius: 10px;
   font-size: 16px;
+}
+
+.input:focus {
+  border-color: #ff6347;
+  outline: none;
+  cursor: pointer;
 }
 
 .submit-button {
@@ -62,7 +70,7 @@ form {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-left: #ff7f50 5px solid;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.6;
 }
 
@@ -96,6 +104,7 @@ footer {
   text-align: center;
   color: black;
   width: 100%;
+  font-size: 14px;
 }
 
 a {
