@@ -25,7 +25,7 @@ h1 {
 /* Main Content Styles */
 
 form {
-  background-color: #ffff;
+  background-color: #fff8dc;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -35,12 +35,12 @@ form {
 .input {
   flex: 1;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffa07a;
   border-radius: 8px;
   font-size: 16px;
 }
 
-button {
+.submit-button {
   background-color: #ffa07a;
   color: white;
   border: none;
@@ -51,15 +51,30 @@ button {
   margin-left: 10px;
 }
 
+.submit-button:hover {
+  background-color: #ff7f50;
+}
+
+.recipe-output {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff8dc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-left: #ff7f50 5px solid;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 /* Footer Styles */
 
 footer {
   text-align: center;
-  color: white;
+  color: #555;
   width: 100%;
 }
 
 a {
-  color: #ffa07a;
+  color: #ff7f50;
   text-decoration: none;
 }
