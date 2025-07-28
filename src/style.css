@@ -16,7 +16,7 @@ header {
 
 h1 {
   text-align: center;
-  color: #ffa07a;
+  color: #ff7f50;
   font-weight: 800;
   font-size: 36px;
   line-height: 1.5;
@@ -36,23 +36,23 @@ form {
   flex: 1;
   padding: 10px;
   border: 1px solid #ffa07a;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 16px;
 }
 
 .submit-button {
-  background-color: #ffa07a;
+  background-color: #ff7f50;
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
   margin-left: 10px;
 }
 
 .submit-button:hover {
-  background-color: #ff7f50;
+  background-color: #ffa07a;
 }
 
 .recipe-output {
@@ -66,15 +66,44 @@ form {
   line-height: 1.6;
 }
 
+.recipe-output.hidden {
+  display: none;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.recipe-output h1 {
+  color: #ff6347;
+  font-size: 30px;
+}
+
 /* Footer Styles */
 
 footer {
   text-align: center;
-  color: #555;
+  color: black;
   width: 100%;
 }
 
 a {
   color: #ff7f50;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ff6347;
 }

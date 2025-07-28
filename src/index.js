@@ -21,6 +21,10 @@ function generateRecipe(event) {
 
   axios.get(apiUrl).then(displayRecipe);
 
+  let recipeOutput = document.querySelector("#recipe-output");
+  recipeOutput.classList.remove("hidden");
+  recipeOutput.innerHTML = `<span class="generating">⌛⏳</span>Generating recipe for <strong>${dessertName}</strong><span class="generating">⌛⏳</span>`;
+
   console.log("Generating recipe for:", dessertName);
 }
 
